@@ -11,7 +11,7 @@ import queryString from 'query-string'
 import { ENABLE_ARCHIVED_GAMES } from '../constants/settings'
 import { NOT_CONTAINED_MESSAGE, WRONG_SPOT_MESSAGE } from '../constants/strings'
 import { VALID_GUESSES } from '../constants/validGuesses'
-import { WORDS } from '../constants/wordlist'
+import { WORDS, SOLUTIONS } from '../constants/wordlist'
 import { getToday } from './dateutils'
 import { getGuessStatuses } from './statuses'
 
@@ -123,7 +123,7 @@ export const getWordOfDay = (index: number) => {
     throw new Error('Invalid index')
   }
 
-  return localeAwareUpperCase(WORDS[index % WORDS.length])
+  return localeAwareUpperCase(SOLUTIONS[index % SOLUTIONS.length])
 }
 
 export const getSolution = (gameDate: Date) => {

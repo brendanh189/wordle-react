@@ -1,6 +1,7 @@
 import './App.css'
 
 import { ClockIcon } from '@heroicons/react/outline'
+import { Button, Space } from 'antd'
 import { format } from 'date-fns'
 import { default as GraphemeSplitter } from 'grapheme-splitter'
 import { useEffect, useState } from 'react'
@@ -289,6 +290,26 @@ function App() {
             </p>
           </div>
         )}
+
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <Space wrap>
+            <Button href="https://brendanh189.github.io/wordle-react-4/">
+              Four Letters
+            </Button>
+            <Button href="https://brendanh189.github.io/wordle-react/">
+              Five Letters
+            </Button>
+            <Button href="https://brendanh189.github.io/wordle-react-6/">
+              Six Letters
+            </Button>
+          </Space>
+        </div>
 
         <div className="mx-auto flex w-full grow flex-col px-1 pt-2 pb-8 sm:px-6 md:max-w-7xl lg:px-8 short:pb-2 short:pt-2">
           <div className="flex grow flex-col justify-center pb-6 short:pb-2">

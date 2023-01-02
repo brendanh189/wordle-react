@@ -1,7 +1,7 @@
 {
   "name": "game",
   "version": "0.1.0",
-  "homepage": "https://brendanh189.github.io/wordle-react/",
+  "homepage": "https://brendanh189.github.io/wordle-react-6/",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
